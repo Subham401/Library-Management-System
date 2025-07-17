@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="interface" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library_management_system.InterfaceController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8f7be" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" height="75.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7267524600028992" green="0.6580116748809814" blue="0.9157894849777222" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7795321345329285" green="0.9789473414421082" blue="0.852651059627533" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button id="addbook" fx:id="click" layoutX="71.0" layoutY="98.0" mnemonicParsing="false" onAction="#addBook" prefHeight="75.0" prefWidth="176.0" text="ADD BOOK">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font></Button>
+      <Button id="memberinfo" layoutX="71.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToMemberPage" prefHeight="75.0" prefWidth="176.0" text="MEMBER INFO." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font></Button>
+      <Button id="bookava" layoutX="354.0" layoutY="98.0" mnemonicParsing="false" onAction="#checkBook" prefHeight="75.0" prefWidth="176.0" text="BOOK AVAILABILITY" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font></Button>
+      <Button id="issuebook" layoutX="354.0" layoutY="200.0" mnemonicParsing="false" onAction="#issueBook" prefHeight="75.0" prefWidth="176.0" text="BOOK ISSUE">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font></Button>
+      <Button id="returnbook" layoutX="212.0" layoutY="300.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="75.0" prefWidth="176.0" text="BOOK RETURN">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font></Button>
+      <Label contentDisplay="CENTER" prefHeight="75.0" prefWidth="600.0" text=" LIBRARY MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

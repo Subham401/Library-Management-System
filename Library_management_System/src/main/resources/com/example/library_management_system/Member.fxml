@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library_management_system.Member">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8f7be" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" height="53.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6421442627906799" green="0.8052819967269897" blue="0.9578947424888611" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7833333611488342" green="1.0" blue="0.7592592835426331" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label prefHeight="53.0" prefWidth="600.0" text="       MEMBERS RECORDS" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="43.0" />
+         </font></Label>
+      <Button layoutX="75.0" layoutY="115.0" mnemonicParsing="false" onAction="#addMember" prefHeight="82.0" prefWidth="148.0" text="NEW MEMBER" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="370.0" layoutY="115.0" mnemonicParsing="false" onAction="#removeMember" prefHeight="82.0" prefWidth="148.0" text="REMOVE MEMBER" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="256.0" layoutY="308.0" mnemonicParsing="false" onAction="#goBack" prefHeight="42.0" prefWidth="88.0" text="BACK">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

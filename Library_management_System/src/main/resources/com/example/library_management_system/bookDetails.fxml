@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library_management_system.BookAdd">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8f7be" height="400.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+        <Rectangle arcHeight="15.0" arcWidth="15.0" height="52.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.6421442627906799" green="0.8052819967269897" blue="0.9578947424888611" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.7833333611488342" green="1.0" blue="0.7592592835426331" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <Label prefHeight="52.0" prefWidth="600.0" text="                 BOOK DETAILS">
+            <font>
+                <Font name="Times New Roman Bold" size="37.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="99.0" prefHeight="22.0" prefWidth="148.0" text="Book Title        :">
+            <font>
+                <Font name="Trebuchet MS Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="136.0" prefHeight="22.0" prefWidth="148.0" text="Book Author     :">
+            <font>
+                <Font name="Trebuchet MS Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="175.0" prefHeight="22.0" prefWidth="148.0" text="Book Publisher :">
+            <font>
+                <Font name="Trebuchet MS Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="bookTitleField" layoutX="260.0" layoutY="97.0" prefHeight="25.0" prefWidth="238.0" />
+        <TextField fx:id="bookAuthorField" layoutX="260.0" layoutY="135.0" prefHeight="25.0" prefWidth="238.0" />
+        <TextField fx:id="bookPublisherField" layoutX="260.0" layoutY="173.0" prefHeight="25.0" prefWidth="238.0" />
+        <Button fx:id="addBookButton" layoutX="265.0" layoutY="254.0" mnemonicParsing="false" onAction="#addbook" prefHeight="37.0" prefWidth="71.0" text="ADD">
+            <font>
+                <Font name="Times New Roman Bold" size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="267.0" layoutY="357.0" mnemonicParsing="false" onAction="#goBack" text="BACK">
+            <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+            </font>
+        </Button>
+      <Label layoutX="101.0" layoutY="211.0" prefHeight="22.0" prefWidth="148.0" text="Copies in Stock :">
+         <font>
+            <Font name="Trebuchet MS Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="noOfCopiesField" layoutX="261.0" layoutY="210.0" prefHeight="25.0" prefWidth="238.0" />
+    </children>
+</Pane>

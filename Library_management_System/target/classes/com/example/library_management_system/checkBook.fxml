@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library_management_system.CheckBook">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8f7be" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" height="61.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6421442627906799" green="0.8052819967269897" blue="0.9578947424888611" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7833333611488342" green="1.0" blue="0.7592592835426331" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label prefHeight="61.0" prefWidth="600.0" text="                   Search Books" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="41.0" />
+         </font>
+      </Label>
+      <Button layoutX="241.0" layoutY="95.0" mnemonicParsing="false" onAction="#searchByTitle" prefHeight="46.0" prefWidth="119.0" text="BY TITLE" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="166.0" mnemonicParsing="false" onAction="#searchByAuthor" prefHeight="46.0" prefWidth="141.0" text="BY AUTHOR">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="217.0" layoutY="235.0" mnemonicParsing="false" onAction="#searchByPublisher" prefHeight="46.0" prefWidth="167.0" text="BY PUBLISHER">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="260.0" layoutY="345.0" mnemonicParsing="false" onAction="#goBack" text="BACK">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

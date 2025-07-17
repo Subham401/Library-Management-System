@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library_management_system.SearchBook">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8f7be" height="110.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+                <TableView fx:id="bookTable" prefHeight="233.0" prefWidth="514.0">
+                    <columns>
+                        <TableColumn fx:id="bookIdColumn" prefWidth="75.0" text="Book ID" />
+                        <TableColumn fx:id="titleColumn" prefWidth="101.20001220703125" text="Title" />
+                        <TableColumn fx:id="authorColumn" prefWidth="75.0" text="Author" />
+                        <TableColumn fx:id="publisherColumn" prefWidth="75.0" text="Publisher" />
+                        <TableColumn fx:id="availableCopiesColumn" prefWidth="75.0" text="Available Copies" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8f7be" height="57.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            </children></VBox>
+        <Rectangle arcHeight="15.0" arcWidth="15.0" height="52.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.6421442627906799" green="0.8052819967269897" blue="0.9578947424888611" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.7833333611488342" green="1.0" blue="0.7592592835426331" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <Label prefHeight="52.0" prefWidth="600.0" text="               Search By Publisher">
+            <font>
+                <Font name="Times New Roman Bold" size="37.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="63.0" prefHeight="34.0" prefWidth="172.0" text="PUBLISHER NAME :" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Corbel Bold Italic" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="publisherName" layoutX="194.0" layoutY="63.0" prefHeight="34.0" prefWidth="274.0" />
+        <Button layoutX="496.0" layoutY="64.0" mnemonicParsing="false" onAction="#searchPublisher" text="Search">
+            <font>
+                <Font name="Times New Roman Bold" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="164.0" layoutY="357.0" mnemonicParsing="false" onAction="#goBack" text="BACK">
+            <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="374.0" layoutY="357.0" mnemonicParsing="false" onAction="#goHome" text="HOME">
+            <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>
