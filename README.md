@@ -23,31 +23,56 @@ A JavaFX-based desktop application for managing library operations such as addin
 
 ## 📁 Project Structure
 
-Library_management_System/\n
+Library_management_System/
+
 ├── src/main/java/com/example/library_management_system/
+
 │ ├── AddOrRemoveMember.java
+
 │ ├── Book.java
+
 │ ├── BookAdd.java
+
 │ ├── CheckBook.java
+
 │ ├── ConnectionClass.java
+
 │ ├── InterfaceController.java
+
 │ ├── Library_Management_System.java
+
 │ ├── Member.java
+
 │ ├── SearchBook.java
+
 │ ├── issueRecord.java
+
 │ └── module-info.java
+
 ├── resources/com/example/library_management_system/
+
 │ ├── Interface.fxml
+
 │ ├── Member.fxml
+
 │ ├── bookDetails.fxml
+
 │ ├── byAuthor.fxml
+
 │ ├── byPublisher.fxml
+
 │ ├── byTitle.fxml
+
 │ ├── checkBook.fxml
+
 │ ├── issueBook.fxml
+
 │ ├── newMember.fxml
+
 │ ├── removeMember.fxml
+
 │ └── returnBook.fxml
+
 ├── pom.xml
 
 
