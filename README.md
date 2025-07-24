@@ -88,13 +88,16 @@ Library_management_System/
 
 3. **Build and Run**
     Use Maven to build the project:
+   ```bash
     mvn clean install
-    Run using your IDE or through the command line.
+
+Run using your IDE or through the command line.
 
 📌 Note
 - Make sure JavaFX SDK is properly set up in your IDE.
 - Java 17+ is recommended.
 - This is a desktop application (not web-based).
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
